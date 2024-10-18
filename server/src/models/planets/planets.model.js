@@ -20,4 +20,5 @@ const loadPlanetData = () => (
             resolve(planets);
         }).on('error', reject)
     }));
-module.exports = {loadPlanetData, planets};
+const getAllPlanets = () => planets;
+module.exports = {loadPlanetData, getAllPlanets};
